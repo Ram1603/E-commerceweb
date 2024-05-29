@@ -1,0 +1,222 @@
+/* Css for Web Homepage section which will be responsive for short and medium devices */
+
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0; /* Add this line */
+  position: relative;
+  min-width: 100%;
+}
+img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover; 
+    /* position: relative; */
+    width: 100px;
+    height: 60px;
+}
+
+.header{
+    min-width:100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color:black;
+    color: #fff;
+    padding: 10px 0;
+    height: 60px;
+}
+
+.search-box{
+    width: 340px;
+    height: 30px;
+    border-bottom-left-radius: 8px;
+    border: 2px solid black;
+}
+
+.search-bar{
+    display: flex;
+    gap: 0;
+}
+.search-btn{
+    height: 30px;
+    width: 80px;
+    border-top-right-radius: 8px;
+    background-color: rgb(198, 198, 4);
+    border: 2px solid black;
+}
+
+.button{
+    border-radius: 8px 8px;
+    padding: 4px;
+    border: 2px solid black;
+}
+
+.cart-btn {
+    background-color: black; /* Adding this line to set the background color to black */
+    border-radius: 8px 8px;
+    padding: 4px;
+    border: 2px solid black;
+}
+
+.cart-btn i {
+    color: rgb(198, 198, 4);  
+    background-color: inherit; /* This will make the icon inherit the background color of the button */
+}
+
+button:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Styling Footer */
+footer{
+    background-color: black;
+    color: #fff;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .col-title{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: large;
+  }
+  .col-title{
+    margin-left: 28px;
+  }
+ footer p{
+    margin-left: 35%;
+  }
+  .bg-image{
+    min-width: 100%;
+    background-image: url("./home3.jpeg");
+    width: 100%;
+    height:  100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    position: relative;
+  }
+  .logo-slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo-slogan img {
+    width: 500px; /* adjust the width as needed */
+    height: 200px;
+    margin-bottom: 1rem;
+  }
+  body{
+    position: relative;
+  }
+  .heading{
+    width: 100%;
+    /* background-image:linear-gradient(to right ,black, rgba(198, 198, 4, 0.432)); */
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); /* add text shadow */
+    margin-top: 2px;
+
+  }
+  .button:hover{
+    background-color: rgba(255, 255, 0, 0.418) !important;
+    color: black !important;
+  }
+  .cart-btn i:hover {
+    color: white;
+    background-color: inherit; /* This will make the icon inherit the background color of the button */
+}
+/* Add the media query */
+@media screen and (max-width: 768px) {
+    /* Style the header for small screens */
+    #site-header {
+      flex-direction: column;
+      align-items: flex-start;
+      height: 200px;
+    }
+    
+    #site-header .search-bar {
+      width: 50%;
+      margin-bottom: 1rem;
+    }
+  
+    #site-header .login-btn {
+      width: 50%;
+    }
+    .logo-slogan p{
+      width: 80% !important;
+        text-align: center;
+        text-overflow: inherit;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .footer-container .col-items {
+      margin: 10px 0;
+    }
+    .footer-container .col-title {
+      margin-bottom: 5px;
+    }
+    .footer-container .col-title { /* Add this class to the "Women" title */
+      text-align: center;
+      margin-right: 30px;
+    }
+    .footer-container .links ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .footer-container .links li {
+      margin: 5px 0;
+    }
+    footer p {
+        margin-left: 0;
+        text-align: center;
+      }
+
+  }
+
+.card{
+  box-shadow: 20px 20px 60px black,-20px -20px 60px rgba(0, 0, 0, 0.24);
+}

@@ -1,0 +1,41 @@
+/* Css for all contact section which will be responsive for short and medium devices */
+
+html,body{
+    overflow-x: hidden;
+}
+.heading{
+  margin-top:20px;
+}
+
+h1{
+    text-shadow: 4px 4px 8px white,-4px -4px 8px wheat;
+    text-align: center;
+    text-transform: uppercase;
+    background-color:  rgb(184, 184, 10);
+}
+.submit-button{
+    width: 100%;
+    background-color: rgb(184, 184, 10) !important;
+    
+}
+.col-img {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .col-img img{
+    height: 80%;
+  }
+
+  .submit-button:hover{
+    background-color: rgb(216, 216, 31) !important;
+  }
+.form-label{
+    font-family: 'Times New Roman', Times, serif;
+   
+}
+.form-control{
+    width: 500px !important;
+}
