@@ -170,7 +170,7 @@ var footerHTML=`
     <p class="col-title">Links</p>
     <div class="links">
       <ul>
-        <li><a href="./01_HomePage.html">Home</a></li>
+        <li><a href="./index.html">Home</a></li>
         <li><a href="./03_Contact.html">Contact</a></li>
         <li><a href="="./04_login.html">Login/Signup</a></li>
       </ul>
